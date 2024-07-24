@@ -1,0 +1,97 @@
+:root {
+    --purple-base: #883AE1;
+    --purple-light: #E6D6FC;
+    --gray-base: #20293A;
+    --gray-light: #6C727F;
+    --gray-lighter: #E5EAF0;
+    --gray-lightest: #FAFAF9;
+    --white-base: #FFFFFF;
+    --breakpoint-sm: 640px;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--gray-base);
+    background-color: var(--gray-lightest);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+a.card {
+    flex: 0 1 368px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 4px 4px 24px -4px rgba(6,6,6,0.09);
+    border-radius: 16px;
+    background-color: var(--white-base);
+}
+
+picture.card-thumb {
+    padding: 16px;
+    display: block;
+}
+
+picture.card-thumb img {
+    display: block;
+    aspect-ratio: 336 / 152;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card-content {
+    padding: 0 16px 16px 16px;
+}
+
+.card-content h3 {
+    margin: 16px 0 8px 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 700;
+    color: inherit;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    color: var(--gray-light);
+}
+
+span.card-chip {
+    display: inline-block;
+    padding: 4px 16px;
+    border-radius: 16px;
+    background-color: var(--purple-light);
+    color: var(--purple-base);
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 700;
+}
+
+
+
+.card-author {
+    padding: 16px;
+    border-top: 1px solid var(--gray-lighter);
+}
+
+.card-author p {
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--gray-light);
+}

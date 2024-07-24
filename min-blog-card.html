@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <head>
     <title>Minimal Blog Card</title>
+    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 
 <body>
-    <div class="card">
-        <div class="card-thumb">
-            <picture>
+    <div class="cards">
+        <a href="/link/to/blog/post" class="card" role="article">
+            <picture class="card-thumb">
                 <source media="(min-width: 640px)" srcset="assets/cactus_img.jpg">
                 <img src="assets/cactus_img-sm.jpg" alt="A lone cactus in a terra cotta pot against a plain pink background.">
             </picture>
-        </div>
-        <div class="card-content">
-            <h3>Embracing Minimalism</h3>
-            <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
-
-        </div>
-        <div class="card-author">
-            <p>Annie Spratt</p>
-        </div>
+            <div class="card-content">
+                <span class="card-chip">Design</span>
+                <h3 aria-level="2">Embracing Minimalism</h3>
+                <p>From minimalist sculptures to minimalist paintings, this blog will inspire you to appreciate the beauty that lies in simplicity.</p>
+            </div>
+            <div class="card-author">
+                <p>Annie Spratt</p>
+            </div>
+        </a>
     </div>
 </body>
